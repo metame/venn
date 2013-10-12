@@ -34,13 +34,11 @@ h1	{
 }
 
 .circle-0	{
-	background-color: rgba(65, 64, 66, .4);
-	
+	background-color: rgba(65, 64, 66, .4);	
 }
 
 .circle-1	{
 	background-color: rgba(54, 61, 29, .4);
-
 }
 
 .circle-2	{
@@ -49,4 +47,8 @@ h1	{
 
 .circle-3	{
 	background-color: rgba(32, 21, 43, .4);
+}
+
+.circle-4	{
+	background-color: rgba(21, 26, 43, .4);
 }
