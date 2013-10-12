@@ -1,0 +1,52 @@
+body	{
+	background-color: #B6B4B3;
+}
+
+header	{
+		text-align: center;
+}
+
+h1	{
+	color: #414042;
+	text-shadow: 1px 1px 2px #444;
+}
+
+#main	{
+	width: 100%;
+}
+
+.circle	{	
+	border-width: 5px;	
+	border-style: solid;
+	height: 300px;
+	width: 300px;
+	border-radius: 155px;
+	position: relative;
+	float: left;
+	border-color: #555;
+}
+
+#label	{
+	color: #414042;
+	font-size: 1.2em;
+	top: 140px;
+	left: 71px;
+}
+
+.circle-0	{
+	background-color: rgba(65, 64, 66, .4);
+	
+}
+
+.circle-1	{
+	background-color: rgba(54, 61, 29, .4);
+
+}
+
+.circle-2	{
+	background-color: rgba(64, 56, 31, .4);
+}
+
+.circle-3	{
+	background-color: rgba(32, 21, 43, .4);
+}
