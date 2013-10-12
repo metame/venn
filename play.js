@@ -11,3 +11,21 @@ $('document').ready(function()	{
 	});
 });
 
+/*need to build capability to select a circle to change options
+
+Essential:
+Label rename
+Delete circle
+
+Nice to have:
+resize
+color
+default box shadows
+
+advanced:
+label style properties
+full style control on circles
+*/
+
+/*would like ability to create a locked grid at least have to figure out the PDF export option*/
+
