@@ -1,6 +1,7 @@
 var circle = '<div class="drag circle resize"><label id="label" for="circle" class="drag">Label</label></div>';
-var circlenav = '<nav class="circlemenu"><ul><li><a href="#">Label</a></li><li><a href="#">Delete</a></li><li><a href="#">Size</a></li><li><a href="#">Color</a></li></ul></nav>';
+var circlenav = '<nav class="circlemenu"><ul><li><a href="#" contenteditable="true">Label</a></li><li><a href="#">Delete</a></li><li><a href="#">Size</a></li><li><a href="#">Color</a></li></ul></nav>';
 
+/* basic venn functionality */
 $(document).ready(function()	{
 	$('#add').click(function(e)	{
 		e.preventDefault();
@@ -17,13 +18,22 @@ $(document).ready(function()	{
 		});
 
 		$('.drag').draggable();
-	});
 
-	$('.circle').hover(function()	{
-		$(this).fadeOut('fast');
+		$('nav ul li a').click(function()	{
+		('.circlemenu').append('<div class="label"><input type=text name="Label">');
+	});
 	});
 });
 
+
+/* draggable */
+$(document).ready(function()	{
+	$('.drag').draggable();
+});
+
+
+/* renaming Labels for circle elements */
+/* need to write javascript so that when someone presses enter while focused on label it just unselects the label instead of creates a new line */
 
 /*need to build capability to select a circle to change options
 
