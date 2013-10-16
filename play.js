@@ -21,7 +21,7 @@ $(document).ready(function()	{
 
 		/* renaming Labels for circle elements */
 		$('.label').click(function()	{
-			$(this).replaceWith('<input type="text" placeholder="Label" name="Relabel">');
+			$('.circlemenu').prepend('<input class="relabel" type="text" placeholder="Label" name="Relabel">');
 		});
 
 	});
