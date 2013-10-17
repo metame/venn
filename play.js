@@ -5,24 +5,46 @@ var circlenav = '<nav class="circlemenu"><ul><li class="label">Label</li><li><a 
 $(document).ready(function()	{
 	$('#add').click(function(e)	{
 		e.preventDefault();
-		$('#main').append(circle);
+		$('#main').append(circle); /* create circle */
 
-		$('#menus').append(circlenav);
+		$('#menus').append(circlenav); /* create circle menu */
 
+		/* add classes dynamically to circles based on index */
 		$('.circle').addClass(function( index ) {
   			return "circle-" + index;
 		});
 
+		/* add classes dynamically to circle menus based on index */
 		$('.circlemenu').addClass(function( index )	{
 			return "cnav-" + index;
 		});
 
+		/* todo: add class based on index to group all elements belonging to a circle array in a single class */
+
+		/*draggable*/
 		$('.drag').draggable();		
 
 		/* renaming Labels for circle elements */
+		var relabel = '<input class="relabel" type="text" placeholder="Label" name="Relabel">';
 		$('.label').click(function()	{
-			$('.circlemenu').prepend('<input class="relabel" type="text" placeholder="Label" name="Relabel">');
+			$('.circlemenu').prepend(relabel);
+
+			/* dynamically assign classes to relabel inputs based on index */
+			$('.relabel').addClass(function( index )	{
+				return "relabel-" + index;
+			});
+
+			/* add input value to printed label */
+			$('.relabel').change(function()	{
+				var value = $(this).val();
+				$('#printedlabel').html(value);
+			});
+
 		});
+
+		
+
+		
 
 	});
 });

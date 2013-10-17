@@ -8,14 +8,6 @@
 	"buffers":
 	[
 		{
-			"file": "play.js",
-			"settings":
-			{
-				"buffer_size": 1403,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "play.html",
 			"settings":
 			{
@@ -27,7 +19,15 @@
 			"file": "play.css",
 			"settings":
 			{
-				"buffer_size": 1268,
+				"buffer_size": 1320,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "play.js",
+			"settings":
+			{
+				"buffer_size": 1413,
 				"line_ending": "Windows"
 			}
 		}
@@ -93,38 +93,11 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "play.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1403,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "play.html",
 					"semi_transient": false,
 					"settings":
@@ -136,8 +109,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								560,
+								560
 							]
 						],
 						"settings":
@@ -150,28 +123,67 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "play.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1268,
+						"buffer_size": 1320,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								764,
+								764
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 765.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "play.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1413,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								766,
+								773
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -199,11 +211,25 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				2,
+				0,
+				3,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.33,
+			0.66,
 			1.0
 		],
 		"rows":

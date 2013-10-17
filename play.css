@@ -63,8 +63,8 @@ li 	{
 }
 
 .relabel	{
-	position: static;
-	top: 10px;
+	position: absolute;
+	bottom: 25px;
 }
 
 
