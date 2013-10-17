@@ -1,5 +1,5 @@
 var circle = '<div class="drag circle"><label id="printedlabel" for="circle" class="drag">Label</label></div>';
-var circlenav = '<nav class="circlemenu"><ul><li class="label">Label</li><li><a href="#">Delete</a></li><li><a href="#">Size</a></li><li><a href="#">Color</a></li></ul></nav>';
+var circlenav = '<nav class="circlemenu"><ul><li class="label">Label</li><li>Delete</li><li>Size</li><li>Color</li></ul></nav>';
 
 /* basic venn functionality */
 $(document).ready(function()	{
@@ -67,7 +67,6 @@ $(document).ready(function()	{
 		});
 		
 		/* resize menu function */
-
 		$(".cnav-0 ul li:contains('Size')").click(function()	{
 			$('.circle-0').addClass('resize');
 			$('.resize').resizable({
@@ -88,6 +87,8 @@ $(document).ready(function()	{
 				aspectRatio: true
 			});
 		});
+
+		/* color menu function */
 
 	});
 });
