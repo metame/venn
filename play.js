@@ -35,9 +35,19 @@ $(document).ready(function()	{
 			});
 
 			/* add input value to printed label */
-			$('.relabel').change(function()	{
+			$('.relabel-0').change(function()	{
 				var value = $(this).val();
-				$('#printedlabel').html(value);
+				$('.circle-0 #printedlabel').html(value);
+			});
+
+			$('.relabel-1').change(function()	{
+				var value = $(this).val();
+				$('.circle-1 #printedlabel').html(value);
+			});
+
+			$('.relabel-2').change(function()	{
+				var value = $(this).val();
+				$('.circle-2 #printedlabel').html(value);
 			});
 
 		});
