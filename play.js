@@ -89,7 +89,26 @@ $(document).ready(function()	{
 		});
 
 		/* color menu function */
+		
+		$(".circlemenu ul li:contains('Color')").one('click', function()	{
+			var recolor = '<input class="recolor" type="text" placeholder="Standard, Hex, RGB, or RGBA Color (CSS format)" name="Recolor">';
+			$('.circlemenu').prepend(recolor);
 
+			$('.cnav-0 .recolor').change(function()	{
+				var color0 = $(this).val();
+				$('.circle-0').css('background-color',color0);
+			});
+
+			$('.cnav-1 .recolor').change(function()	{
+				var color1 = $(this).val();
+				$('.circle-1').css('background-color',color1);
+			});
+
+			$('.cnav-2 .recolor').change(function()	{
+				var color2 = $(this).val();
+				$('.circle-2').css('background-color',color2);
+			});
+		});
 	});
 });
 
@@ -107,13 +126,9 @@ $(document).ready(function()	{
 
 /*need to build capability to select a circle to change options
 
-Essential:
-Label rename
-Delete circle
+
 
 Nice to have:
-resize
-color
 default box shadows
 
 advanced:
