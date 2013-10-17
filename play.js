@@ -26,28 +26,25 @@ $(document).ready(function()	{
 
 		/* renaming Labels for circle elements */
 		var relabel = '<input class="relabel" type="text" placeholder="Label" name="Relabel">';
-		$('.label').click(function()	{
+		$('.label').one('click', function()	{
 			$('.circlemenu').prepend(relabel);
 
-			/* dynamically assign classes to relabel inputs based on index */
-			$('.relabel').addClass(function( index )	{
-				return "relabel-" + index;
-			});
+		
 
 			/* add input value to printed label */
-			$('.relabel-0').change(function()	{
-				var value = $(this).val();
-				$('.circle-0 #printedlabel').html(value);
+			$('.cnav-0 .relabel').change(function()	{
+				var val0 = $(this).val();
+				$('.circle-0 #printedlabel').html(val0);
 			});
 
-			$('.relabel-1').change(function()	{
-				var value = $(this).val();
-				$('.circle-1 #printedlabel').html(value);
+			$('.cnav-1 .relabel').change(function()	{
+				var val1 = $(this).val();
+				$('.circle-1 #printedlabel').html(val1);
 			});
 
-			$('.relabel-2').change(function()	{
-				var value = $(this).val();
-				$('.circle-2 #printedlabel').html(value);
+			$('.cnav-2 .relabel').change(function()	{
+				var val2 = $(this).val();
+				$('.circle-2 #printedlabel').html(val2);
 			});
 
 		});
