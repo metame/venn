@@ -29,8 +29,6 @@ $(document).ready(function()	{
 		$('.label').one('click', function()	{
 			$('.circlemenu').prepend(relabel);
 
-		
-
 			/* add input value to printed label */
 			$('.cnav-0 .relabel').change(function()	{
 				var val0 = $(this).val();
@@ -46,9 +44,24 @@ $(document).ready(function()	{
 				var val2 = $(this).val();
 				$('.circle-2 #printedlabel').html(val2);
 			});
-
+				/* currently have to add function for each circle and label. would like to bring this to a more simple, scalable solution */
 		});
 
+		/* delete menu function */
+		$(".cnav-0 ul li:contains('Delete')").click(function()	{
+			var array0 = $('.circle-0, .cnav-0');
+			$(array0).remove();
+		});
+
+		$(".cnav-1 ul li:contains('Delete')").click(function()	{
+			var array1 = $('.circle-1, .cnav-1');
+			$(array1).remove();
+		});
+
+		$(".cnav-2 ul li:contains('Delete')").click(function()	{
+			var array2 = $('.circle-2, .cnav-2');
+			$(array2).remove();
+		});
 		
 
 		
