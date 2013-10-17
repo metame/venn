@@ -28,7 +28,7 @@ h1	{
 	border-style: solid;
 	height: 300px;
 	width: 300px;
-	border-radius: 155px;
+	border-radius: 50%;
 	position: relative;
 	float: left;
 	border-color: #555;

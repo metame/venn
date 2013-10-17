@@ -1,4 +1,4 @@
-var circle = '<div class="drag circle resize"><label id="printedlabel" for="circle" class="drag">Label</label></div>';
+var circle = '<div class="drag circle"><label id="printedlabel" for="circle" class="drag">Label</label></div>';
 var circlenav = '<nav class="circlemenu"><ul><li class="label">Label</li><li><a href="#">Delete</a></li><li><a href="#">Size</a></li><li><a href="#">Color</a></li></ul></nav>';
 
 /* basic venn functionality */
@@ -23,6 +23,9 @@ $(document).ready(function()	{
 
 		/*draggable*/
 		$('.drag').draggable();		
+
+		/* resizable */
+		$('.resize').resizable();
 
 		/* renaming Labels for circle elements */
 		var relabel = '<input class="relabel" type="text" placeholder="Label" name="Relabel">';
@@ -63,8 +66,28 @@ $(document).ready(function()	{
 			$(array2).remove();
 		});
 		
+		/* resize menu function */
 
-		
+		$(".cnav-0 ul li:contains('Size')").click(function()	{
+			$('.circle-0').addClass('resize');
+			$('.resize').resizable({
+				aspectRatio: true
+			});
+		});
+
+		$(".cnav-1 ul li:contains('Size')").click(function()	{
+			$('.circle-1').addClass('resize');
+			$('.resize').resizable({
+				aspectRatio: true
+			});
+		});
+
+		$(".cnav-2 ul li:contains('Size')").click(function()	{
+			$('.circle-2').addClass('resize');
+			$('.resize').resizable({
+				aspectRatio: true
+			});
+		});
 
 	});
 });
