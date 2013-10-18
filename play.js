@@ -1,4 +1,5 @@
-var circle = '<div class="drag circle"><label id="printedlabel" for="circle" class="drag">Label</label></div>';
+var $label = '<label class="printedlabel drag">Label</label>';
+var circle = '<div class="drag circle">' + $label + '</div>';
 var circlenav = '<nav class="circlemenu"><ul><li class="label">Label</li><li>Delete</li><li>Size</li><li>Color</li></ul></nav>';
 
 /* basic venn functionality */
@@ -8,6 +9,9 @@ $(document).ready(function()	{
 		$('#main').append(circle); /* create circle */
 
 		$('#menus').append(circlenav); /* create circle menu */
+
+		/*draggable*/
+		$('.drag').draggable();		
 
 		/* add classes dynamically to circles based on index */
 		$('.circle').addClass(function( index ) {
@@ -21,12 +25,6 @@ $(document).ready(function()	{
 
 		/* todo: add class based on index to group all elements belonging to a circle array in a single class */
 
-		/*draggable*/
-		$('.drag').draggable();		
-
-		/* resizable */
-		$('.resize').resizable();
-
 		/* renaming Labels for circle elements */
 		var relabel = '<input class="relabel" type="text" placeholder="Label" name="Relabel">';
 		$('.label').one('click', function()	{
@@ -35,17 +33,17 @@ $(document).ready(function()	{
 			/* add input value to printed label */
 			$('.cnav-0 .relabel').change(function()	{
 				var val0 = $(this).val();
-				$('.circle-0 #printedlabel').html(val0);
+				$('.circle-0 .printedlabel').html(val0);
 			});
 
 			$('.cnav-1 .relabel').change(function()	{
 				var val1 = $(this).val();
-				$('.circle-1 #printedlabel').html(val1);
+				$('.circle-1 .printedlabel').html(val1);
 			});
 
 			$('.cnav-2 .relabel').change(function()	{
 				var val2 = $(this).val();
-				$('.circle-2 #printedlabel').html(val2);
+				$('.circle-2 .printedlabel').html(val2);
 			});
 				/* currently have to add function for each circle and label. would like to bring this to a more simple, scalable solution */
 		});
@@ -112,11 +110,23 @@ $(document).ready(function()	{
 	});
 });
 
-
-/* draggable */
 $(document).ready(function()	{
-	$('.drag').draggable();
+	$('#label').click(function(e)	{
+		e.preventDefault();
+		$($label).appendTo('#main')
+		.addClass(function( index ) {
+  			return "flabel-" + index;
+		});
+
+		/*need to add functionality to rename label, change label style and delete label*/	
+
+		$('.drag').draggable();
+
+
+	});
 });
+
+
 
 
 
