@@ -3,6 +3,26 @@
 	{
 		"selected_items":
 		[
+			[
+				"conta",
+				"containment"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"resi",
+				"resizable"
+			],
+			[
+				"rezi",
+				"resizable"
+			],
+			[
+				"printed",
+				"printedlabel"
+			]
 		]
 	},
 	"buffers":
@@ -11,7 +31,7 @@
 			"file": "play.html",
 			"settings":
 			{
-				"buffer_size": 560,
+				"buffer_size": 673,
 				"line_ending": "Windows"
 			}
 		},
@@ -19,7 +39,7 @@
 			"file": "play.css",
 			"settings":
 			{
-				"buffer_size": 1320,
+				"buffer_size": 1362,
 				"line_ending": "Windows"
 			}
 		},
@@ -27,7 +47,7 @@
 			"file": "play.js",
 			"settings":
 			{
-				"buffer_size": 1413,
+				"buffer_size": 4195,
 				"line_ending": "Windows"
 			}
 		}
@@ -62,7 +82,7 @@
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -76,6 +96,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"printedlabel",
+			"#printedlabel",
+			"printedlabel"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -83,6 +106,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			".printedlabel"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -102,15 +126,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 560,
+						"buffer_size": 673,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								560,
-								560
+								588,
+								588
 							]
 						],
 						"settings":
@@ -136,15 +160,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1320,
+						"buffer_size": 1362,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								764,
-								764
+								867,
+								867
 							]
 						],
 						"settings":
@@ -153,7 +177,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 765.0,
+						"translation.y": 450.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -170,23 +194,24 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1413,
+						"buffer_size": 4195,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								766,
-								773
+								3757,
+								3757
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": 123.0,
+						"translation.y": 1545.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -196,7 +221,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 23.0
 	},
 	"input":
 	{
@@ -242,7 +267,7 @@
 	"project": "venn.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 62.0
 	},
 	"save_all_on_build": true,
 	"select_file":

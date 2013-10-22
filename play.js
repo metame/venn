@@ -11,7 +11,7 @@ $(document).ready(function()	{
 		$('#menus').append(circlenav); /* create circle menu */
 
 		/*draggable*/
-		$('.drag').draggable();		
+		$('.drag').draggable({containment: "document"});		
 
 		/* add classes dynamically to circles based on index */
 		$('.circle').addClass(function( index ) {
@@ -87,6 +87,7 @@ $(document).ready(function()	{
 		});
 
 		/* color menu function */
+		/* bug in color menu: need to change input position so it doesn't fall in same place as relabel */
 		
 		$(".circlemenu ul li:contains('Color')").one('click', function()	{
 			var recolor = '<input class="recolor" type="text" placeholder="Standard, Hex, RGB, or RGBA Color (CSS format)" name="Recolor">';
@@ -120,7 +121,7 @@ $(document).ready(function()	{
 
 		/*need to add functionality to rename label, change label style and delete label*/	
 
-		$('.drag').draggable();
+		$('.drag').draggable({containment: "document"});
 
 
 	});
