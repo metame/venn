@@ -13,10 +13,8 @@ h1	{
 	text-shadow: 1px 1px 2px #444;
 }
 
-#menus	{
-	position: absolute;
-	width: 100%;
-
+#add, #label {
+	cursor: pointer;
 }
 
 #main	{
@@ -43,32 +41,6 @@ h1	{
 	left: 71px;
 }
 
-.circlemenu	{
-	position: relative;
-	float: left;
-	margin: 0 10px 0 10px;
-	border: solid 2px #555;
-}
-
-ul	{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	width: 14.5em;
-	text-align: center;
-
-}
-
-li 	{
-	display: inline;
-	padding: 0 10px;
-}
-
-.relabel, .recolor	{
-	position: absolute;
-	bottom: 25px;
-}
-
 .flabel-*	{
 	z-index: 999;
 }
@@ -90,25 +62,5 @@ li 	{
 }
 
 .circle-4	{
-	background-color: rgba(21, 26, 43, .4);
-}
-
-.cnav-0	{
-	background-color: rgba(65, 64, 66, .4);	
-}
-
-.cnav-1	{
-	background-color: rgba(54, 61, 29, .4);
-}
-
-.cnav-2	{
-	background-color: rgba(64, 56, 31, .4);
-}
-
-.cnav-3	{
-	background-color: rgba(32, 21, 43, .4);
-}
-
-.cnav-4	{
 	background-color: rgba(21, 26, 43, .4);
 }

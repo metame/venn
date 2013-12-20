@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"le",
+				"leftClick"
+			],
+			[
+				"circle",
+				"circlemenu"
+			],
+			[
+				"conte",
+				"contextMenu"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
 				"conta",
 				"containment"
 			],
@@ -31,7 +51,7 @@
 			"file": "play.html",
 			"settings":
 			{
-				"buffer_size": 673,
+				"buffer_size": 805,
 				"line_ending": "Windows"
 			}
 		},
@@ -39,7 +59,7 @@
 			"file": "play.css",
 			"settings":
 			{
-				"buffer_size": 1362,
+				"buffer_size": 861,
 				"line_ending": "Windows"
 			}
 		},
@@ -47,7 +67,7 @@
 			"file": "play.js",
 			"settings":
 			{
-				"buffer_size": 4214,
+				"buffer_size": 2506,
 				"line_ending": "Windows"
 			}
 		}
@@ -79,6 +99,8 @@
 	},
 	"file_history":
 	[
+		"/C/Sites/venn/contextMenu.js-master/contextMenu.js",
+		"/C/Sites/venn/contextMenu.js-master/README.md"
 	],
 	"find":
 	{
@@ -126,15 +148,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 673,
+						"buffer_size": 805,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								672,
-								672
+								415,
+								415
 							]
 						],
 						"settings":
@@ -160,15 +182,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1362,
+						"buffer_size": 861,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1362,
-								1362
+								244,
+								244
 							]
 						],
 						"settings":
@@ -194,15 +216,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4214,
+						"buffer_size": 2506,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2628,
-								2628
+								125,
+								125
 							]
 						],
 						"settings":
@@ -211,7 +233,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1092.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
