@@ -1,9 +1,11 @@
 body	{
-	background-color: #B6B4B3;
+	background: #B6B4B3 url("http://themetamethod.com/images/metamainbg.png") repeat left top;
+	overflow: hidden;
 }
 
+
 header	{
-		text-align: center;
+	text-align: center;
 }
 
 h1	{

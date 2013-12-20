@@ -47,7 +47,7 @@
 			"file": "play.js",
 			"settings":
 			{
-				"buffer_size": 4195,
+				"buffer_size": 4214,
 				"line_ending": "Windows"
 			}
 		}
@@ -133,8 +133,8 @@
 						"selection":
 						[
 							[
-								588,
-								588
+								672,
+								672
 							]
 						],
 						"settings":
@@ -167,8 +167,8 @@
 						"selection":
 						[
 							[
-								867,
-								867
+								1362,
+								1362
 							]
 						],
 						"settings":
@@ -177,7 +177,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 450.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -194,15 +194,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4195,
+						"buffer_size": 4214,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3757,
-								3757
+								2628,
+								2628
 							]
 						],
 						"settings":
@@ -210,8 +210,8 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 123.0,
-						"translation.y": 1545.0,
+						"translation.x": 0.0,
+						"translation.y": 1092.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

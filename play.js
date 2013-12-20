@@ -25,6 +25,7 @@ $(document).ready(function()	{
 
 		/* todo: add class based on index to group all elements belonging to a circle array in a single class */
 
+		
 		/* renaming Labels for circle elements */
 		var relabel = '<input class="relabel" type="text" placeholder="Label" name="Relabel">';
 		$('.label').one('click', function()	{
@@ -114,18 +115,35 @@ $(document).ready(function()	{
 $(document).ready(function()	{
 	$('#label').click(function(e)	{
 		e.preventDefault();
-		$($label).appendTo('#main')
-		.addClass(function( index ) {
+		$($label).appendTo('#main').addClass("freelabel");
+		$(".printedlabel").addClass(function( index ) {
   			return "flabel-" + index;
 		});
-
-		/*need to add functionality to rename label, change label style and delete label*/	
-
 		$('.drag').draggable({containment: "document"});
 
+		/* label context menu */
+		$('.freelabel').contextMenu('labelmenu', {
+			'Rename': {
+				click: function(element){
+					var relabel = prompt("enter label name");
+					element.text(relabel);
+				}
+			},
+			'Delete': {
+				click: function(element){
+					element.remove();
+				}
+			}
+		},
+		{
+			leftClick: true
+		}
+		);
 
-	});
+		});
+
 });
+
 
 
 
