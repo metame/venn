@@ -15,12 +15,6 @@ $(document).ready(function()	{
   			return "circle-" + index;
 		});
 
-		/* add classes dynamically to circle menus based on index */
-		$('.circlemenu').addClass(function( index )	{
-			return "cnav-" + index;
-		});
-
-		/* todo: add class based on index to group all elements belonging to a circle array in a single class */
 	/* label context menu */
 		$('.circle').contextMenu('circlemenu', {
 			'Rename': {
@@ -97,12 +91,11 @@ $(document).ready(function()	{
 
 
 
-/* need to write javascript so that when someone presses enter while focused on label it just unselects the label instead of creates a new line */
-
-/*need to build capability to select a circle to change options
 
 
 
+
+/* 
 Nice to have:
 default box shadows
 
