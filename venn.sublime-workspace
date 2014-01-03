@@ -67,7 +67,7 @@
 			"file": "play.js",
 			"settings":
 			{
-				"buffer_size": 2506,
+				"buffer_size": 2047,
 				"line_ending": "Windows"
 			}
 		}
@@ -99,6 +99,7 @@
 	},
 	"file_history":
 	[
+		"/C/Sites/jsPDF/tools/jsdoc_template/publish.js",
 		"/C/Sites/venn/contextMenu.js-master/contextMenu.js",
 		"/C/Sites/venn/contextMenu.js-master/README.md"
 	],
@@ -155,8 +156,8 @@
 						"selection":
 						[
 							[
-								415,
-								415
+								564,
+								564
 							]
 						],
 						"settings":
@@ -189,8 +190,8 @@
 						"selection":
 						[
 							[
-								244,
-								244
+								432,
+								432
 							]
 						],
 						"settings":
@@ -216,15 +217,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2506,
+						"buffer_size": 2047,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								125,
-								125
+								1847,
+								1847
 							]
 						],
 						"settings":
@@ -233,7 +234,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 756.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
